@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: John Ko
+subtitle: human after all
+description: Harder, Better, Faster, Stronger
+author: John Ko
+language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.johnko.ca
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -20,7 +20,7 @@ permalink_defaults:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
+tag_dir: tag
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
@@ -38,10 +38,10 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
+    enable: true
+    line_number: true
+    auto_detect: false
+    tab_replace:
 
 # Category & Tag
 default_category: uncategorized
@@ -62,10 +62,17 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+plugins:
+#    - hexo-generator-alias
+#    - hexo-generator-cname
 ## Themes: https://hexo.io/themes/
-theme: landscape
+#theme: landscape
+#theme: magnetic
+theme: hueman
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+    type: git
+    repo: git@github.com:johnko/johnko.github.io.git
+    branch: master
