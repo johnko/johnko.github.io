@@ -150,14 +150,15 @@
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2014/10/25/ssl-offloading-and-reverse-proxy/">Using NGINX for SSL Offloading and Reverse Proxy</a>
+        <a href="/2014/10/25/creating-a-csr/">Creating a CSR</a>
         </h1>
     
 
         <p class="article-excerpt">
-            Sources: http://nginx.com/blog/nginx-ssl/ , http://nginx.com/resources/admin-guide/reverse-proxy/
-I needed to redirect a path served by a web browser over SSL to another server.
-For example: https://d
+            Source: http://www.rackspace.com/knowledge_center/article/generate-a-csr-with-openssl
+I created a private key:
+1openssl genrsa -out ~/domain.com.ssl/domain.com.key 2048
+Then created the CSR and follow
         </p>
     </div>
 </article>
@@ -179,15 +180,14 @@ For example: https://d
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2014/10/25/creating-a-csr/">Creating a CSR</a>
+        <a href="/2014/10/25/ssl-offloading-and-reverse-proxy/">Using NGINX for SSL Offloading and Reverse Proxy</a>
         </h1>
     
 
         <p class="article-excerpt">
-            Source: http://www.rackspace.com/knowledge_center/article/generate-a-csr-with-openssl
-I created a private key:
-1openssl genrsa -out ~/domain.com.ssl/domain.com.key 2048
-Then created the CSR and follow
+            Sources: http://nginx.com/blog/nginx-ssl/ , http://nginx.com/resources/admin-guide/reverse-proxy/
+I needed to redirect a path served by a web browser over SSL to another server.
+For example: https://d
         </p>
     </div>
 </article>
